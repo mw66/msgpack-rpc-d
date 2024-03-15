@@ -1,0 +1,34 @@
+{
+	"authors": [
+		"mw66"
+	],
+	"copyright": "Copyright © 2024, mw66",
+	"description": "msgpack-rpc-d demo.",
+	"license": "MIT",
+	"name": "demo",
+	"configurations": [
+		{
+			"name": "SERVER",
+			"targetName": "server",
+			"targetType": "executable",
+			"versions": [
+				"SERVER"
+			]
+		},
+		{
+			"name": "CLIENT",
+			"targetName": "client",
+			"targetType": "executable",
+			"versions": [
+				"CLIENT"
+			]
+		}
+	],
+	"dependencies": {
+		"vibe-d": "==0.8.6",
+		"msgpack-rpc": {"path": "../../"}
+	},
+	"subConfigurations": {
+		"msgpack-rpc": "default" 
+	}
+}

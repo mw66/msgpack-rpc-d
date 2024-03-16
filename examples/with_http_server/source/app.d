@@ -21,7 +21,7 @@ static void main()
     auto settings = new HTTPServerSettings;
     settings.port = 9090;
     settings.bindAddresses = ["0.0.0.0"];
-    settings.options = settings.options | HTTPServerOption.parseCookies | HTTPServerOption.parseQueryString;
+    settings.options = settings.options | HTTPServerOption.ParseCookies | HTTPServerOption.parseQueryString;
     listenHTTP(settings, router);
 
     //start a rpc server
